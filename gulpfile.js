@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     browserify = require('gulp-browserify'),
@@ -6,8 +8,9 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
     minifyHTML = require('gulp-minify-html'),
-    concat = require('gulp-concat');
-    path = require('path');
+    concat = require('gulp-concat'),
+    path = require('path'),
+    critical = require('critical');
 
 var env,
     jsSources,
